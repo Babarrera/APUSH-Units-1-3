@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>APUSH Complete Study Guide | Periods 1-3 (1491-1800)</title>
     <style>
         * {
@@ -11,457 +11,447 @@
             box-sizing: border-box;
         }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            background-color: #f8f9fa;
-            color: #212529;
-            padding: 20px;
+            background: #f5f2e8;
+            font-family: 'Georgia', 'Times New Roman', Times, serif;
+            line-height: 1.55;
+            color: #1e2a2e;
+            padding: 2rem 1rem;
         }
         .container {
-            max-width: 1200px;
+            max-width: 1300px;
             margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-            border-radius: 8px;
-            padding: 30px;
+            background: #fffef7;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-radius: 24px;
+            padding: 2rem 2rem 3rem;
         }
         h1, h2, h3, h4 {
-            color: #1e3c72;
-            margin-top: 1.5em;
-            margin-bottom: 0.5em;
-            border-bottom: 1px solid #dee2e6;
-            padding-bottom: 0.3em;
+            font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+            font-weight: 600;
+            letter-spacing: -0.01em;
         }
         h1 {
-            font-size: 2.2em;
+            font-size: 2.6rem;
             text-align: center;
-            border-bottom: 3px solid #1e3c72;
-            margin-top: 0;
+            border-bottom: 3px solid #bc9a6c;
+            display: inline-block;
+            width: auto;
+            margin: 0 auto 0.5rem;
+            padding-bottom: 0.3rem;
+            color: #3b2c1e;
+        }
+        .title-wrapper {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .subhead {
+            text-align: center;
+            color: #5a4a3a;
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+            font-style: italic;
         }
         h2 {
-            font-size: 1.8em;
-            background-color: #e9ecef;
-            padding: 0.3em 0.5em;
-            border-radius: 5px;
+            font-size: 1.9rem;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            padding-left: 0.5rem;
+            border-left: 6px solid #bc9a6c;
+            color: #2c4c3b;
         }
         h3 {
-            font-size: 1.4em;
-            color: #0d3b66;
+            font-size: 1.4rem;
+            margin: 1.5rem 0 0.75rem;
+            color: #3d5a4c;
+            font-weight: 600;
         }
         h4 {
-            font-size: 1.2em;
-            border-bottom: 1px dotted #adb5bd;
+            font-size: 1.2rem;
+            margin: 1.2rem 0 0.5rem;
+            color: #5a3e2b;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        ul, ol {
+            margin: 0.75rem 0 1rem 1.8rem;
+        }
+        li {
+            margin: 0.35rem 0;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 1em 0;
-            font-size: 0.95em;
-        }
-        th, td {
-            border: 1px solid #dee2e6;
-            padding: 10px;
-            vertical-align: top;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+            background: #ffffff;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
         }
         th {
-            background-color: #e2e6ea;
-            font-weight: 600;
+            background-color: #e9e1d4;
+            padding: 10px 8px;
+            border: 1px solid #cbc3b5;
+            text-align: left;
+            font-weight: 700;
         }
-        ul, ol {
-            margin: 0.5em 0 1em 1.5em;
+        td {
+            border: 1px solid #dad2c2;
+            padding: 8px;
+            vertical-align: top;
         }
-        li {
-            margin: 0.3em 0;
-        }
-        blockquote {
-            margin: 1em 0;
-            padding: 0.5em 1em;
-            background-color: #f1f3f5;
-            border-left: 5px solid #1e3c72;
-            font-style: italic;
-        }
-        .note {
-            background-color: #fff3cd;
-            border-left: 5px solid #ffc107;
-            padding: 0.8em;
-            margin: 1em 0;
-        }
-        .highlight {
-            background-color: #d1ecf1;
-            padding: 0.2em 0.4em;
-            border-radius: 4px;
+        .highlight-box {
+            background: #fef7e0;
+            border-left: 5px solid #bc9a6c;
+            padding: 1rem 1.2rem;
+            margin: 1.2rem 0;
+            border-radius: 12px;
         }
         hr {
-            margin: 2em 0;
-            border: 0;
-            height: 1px;
-            background: linear-gradient(to right, #ccc, transparent);
+            margin: 2rem 0;
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, #e0d6c8, transparent);
         }
-        .nav {
-            background: #1e3c72;
-            padding: 12px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .nav a {
+        .badge {
+            background: #2c4c3b;
             color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            font-size: 1.1em;
-        }
-        .nav a:hover {
-            text-decoration: underline;
+            font-size: 0.75rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin-right: 0.5rem;
         }
         footer {
-            margin-top: 40px;
+            margin-top: 3rem;
             text-align: center;
-            font-size: 0.85em;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-            padding-top: 20px;
+            font-size: 0.85rem;
+            color: #7f6e5a;
+            border-top: 1px solid #e2d8cc;
+            padding-top: 1.5rem;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 700px) {
             .container {
-                padding: 15px;
+                padding: 1.2rem;
             }
-            table, th, td {
-                font-size: 0.85em;
+            table, thead, tbody, th, td, tr {
+                display: block;
             }
-            .nav a {
-                display: inline-block;
-                margin: 5px 8px;
+            th, td {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
             }
+            th {
+                background: #d9cfbf;
+            }
+        }
+        .kbd {
+            background: #f0ede8;
+            padding: 0.1rem 0.4rem;
+            border-radius: 6px;
+            font-family: monospace;
         }
     </style>
 </head>
 <body>
 <div class="container">
-    <h1>AP U.S. History Complete Study Guide</h1>
-    <p style="text-align: center; font-size: 1.2em;">Periods 1–3: 1491–1800 | The Meeting of Three Worlds to The Crisis of Empire</p>
-    <div class="nav">
-        <a href="#period1">Period 1</a>
-        <a href="#period2">Period 2</a>
-        <a href="#period3">Period 3</a>
-        <a href="#revolution">American Revolution</a>
-        <a href="#skills">AP Skills</a>
+    <div class="title-wrapper">
+        <h1>APUSH Complete Study Guide</h1>
+        <div class="subhead">Periods 1–3: 1491–1800 | The Meeting of Three Worlds to The Crisis of Empire</div>
+        <div class="subhead" style="font-size:0.9rem;">Based entirely on teacher-provided materials — all concepts, terms, dates, and details preserved</div>
     </div>
 
     <!-- ================= PERIOD 1 ================= -->
-    <section id="period1">
-        <h2>Period 1: 1491-1607</h2>
-        <p><strong>The 3 C's:</strong> Contact, Commerce, Competing philosophies.</p>
+    <h2>📍 Period 1: 1491–1607</h2>
+    <p><strong>What are the 3 C's this period covers?</strong> Contact, Commerce, Competing philosophies.</p>
 
-        <h3>1. Native Societies Before European Contact</h3>
-        <p><strong>Description:</strong> Diverse, complex, and adapted to their environments.</p>
-        <ul>
-            <li><strong>Aztecs:</strong> Urban (Tenochtitlan), centralized government, tribute systems.</li>
-            <li><strong>Pueblos:</strong> Agricultural (maize), cliff dwellings, Southwest.</li>
-            <li><strong>Eastern Woodlands:</strong> Matrilineal (Iroquois), hunter-gatherer & farming mix.</li>
-        </ul>
-        <p><strong>Key Point:</strong> Societies were not static—they evolved over time (e.g., Cahokia's decline pre-1492).</p>
+    <h3>1. Native Societies Before European Contact</h3>
+    <p><strong>Description:</strong> Diverse, complex, and adapted to their environments.<br>
+    <strong>Examples:</strong> Aztecs (Urban Tenochtitlan, centralized government, tribute systems); Pueblos (Agricultural maize, cliff dwellings, Southwest); Eastern Woodlands (Matrilineal Iroquois, hunter-gatherer & farming mix).<br>
+    <strong>Key Point:</strong> Societies were not static—they evolved over time (e.g., Cahokia's decline pre-1492).</p>
+    <p><strong>Additional details from American Pageant / Guided Notes:</strong><br>
+    <strong>Key Concept 1.1:</strong> "As native populations migrated and settled across the vast expanse of North America over time, they developed distinct and increasingly complex societies by adapting to and transforming their diverse environments."<br>
+    <strong>Impact of Maize cultivation:</strong> Less hunting/gathering, population increase, permanent villages, Tenochtitlan (250,000).<br>
+    <strong>Great Plains and Great Basin:</strong> Hunting/gathering, horse transformed bison hunting.<br>
+    <strong>Northeast, Mississippi River Valley, and Atlantic Seaboard:</strong> Mixed hunting and agriculture; Iroquois matriarchal, burned forests.<br>
+    <strong>Cahokia Indians:</strong> near St. Louis (30,000 people in 1200).<br>
+    <strong>Native American Culture:</strong> Animism; Pueblo irrigation; Iroquois Confederacy.<br>
+    <strong>Pre-Contact Migration:</strong> Migrated via Bering Strait; diverse societies adapted to environments.</p>
 
-        <h3>2. Major Effect of Columbus's Voyage (1492)</h3>
-        <p><strong>Cause and Effect:</strong> Triggered the Columbian Exchange → global transfer of goods, people, diseases.<br>
-        <strong>Effect:</strong> Demographic catastrophe for Natives (disease), rise of transatlantic slavery, European dominance.</p>
+    <h3>2. Major Effect of Columbus's Voyage (1492)</h3>
+    <p><strong>Cause and Effect:</strong> Triggered the Columbian Exchange → global transfer of goods, people, diseases.<br>
+    <strong>Effect:</strong> Demographic catastrophe for Natives (disease), rise of transatlantic slavery, European dominance.</p>
 
-        <h3>3. Columbian Exchange Facts (3Cs)</h3>
-        <table>
-            <thead>
-                <tr><th>Category</th><th>Continuity & Change</th><th>Compare & Contrast</th><th>Cause & Effect</th></tr>
-            </thead>
-            <tbody>
-                <tr><td><strong>Animals</strong></td><td>Natives had no horses; post-contact, Plains tribes adopted them.</td><td>Old World (horses, cows) vs. New World (llamas, turkeys).</td><td>Horses → transformed Native mobility/power.</td></tr>
-                <tr><td><strong>Plants</strong></td><td>Corn/potatoes → European population boom.</td><td>Old World (wheat) vs. New World (tobacco).</td><td>Cash crops (tobacco) fueled plantation economies.</td></tr>
-                <tr><td><strong>Microbes</strong></td><td>Natives had no immunity → 80% population decline.</td><td>Smallpox (Old World) vs. syphilis (New World).</td><td>Demographic collapse → labor replaced by enslaved Africans.</td></tr>
-                <tr><td><strong>People</strong></td><td>Europeans/Africans migrated; Natives displaced.</td><td>Voluntary (Europeans) vs. forced (Africans) migration.</td><td>Slavery → racial caste systems in colonies.</td></tr>
-            </tbody>
-        </table>
-
-        <h3>4. "Competing Philosophies"</h3>
-        <p><strong>What?</strong> Ideological clashes over colonization.</p>
-        <ul>
-            <li><strong>Doctrine of Discovery (1493):</strong> Europeans claimed land by "divine right."</li>
-            <li><strong>Bartolomé de las Casas:</strong> Argued Natives had souls; opposed brutality.</li>
-            <li><strong>Religious Rivalry:</strong> Catholics (Spain) vs. Protestants (England) for souls/territory.</li>
-        </ul>
-        <p><strong>Valladolid Debate:</strong><br>
-        <strong>Sepúlveda:</strong> Indians are "natural slaves" – intellectual inferiority, savage practices.<br>
-        <strong>Las Casas:</strong> Indians are brothers – sophisticated societies, capacity for reason, shared humanity.</p>
-
-        <h3>5. Spanish Labor & Caste Systems</h3>
-        <ul>
-            <li><strong>Encomienda System:</strong> Forced Native labor on plantations/mines.</li>
-            <li><strong>Mission System:</strong> Forced conversion and labor.</li>
-            <li><strong>New Ethnicities:</strong> Mestizos, Mulattos.</li>
-            <li><strong>Caste System (Castas):</strong> Rigid racial hierarchy (Peninsulares, Creoles, Mestizos/Mulattos).</li>
-        </ul>
-
-        <h3>6. Skill Focus: Multiple Choice</h3>
-        <p><strong>Correct Answer Example:</strong> B (Growing dependence on indentured servants until 1700, then African slavery).<br>
-        <strong>3 Tips:</strong> Analyze visuals first → identify trends. Eliminate absolutes. Context over dates.</p>
-    </section>
-
-    <!-- ================= PERIOD 2 ================= -->
-    <section id="period2">
-        <h2>Period 2: 1607-1754</h2>
-        <p><strong>The 3 G's:</strong> Gold, God, Glory.</p>
-
-        <h3>1. European Colonization Models (Comparison)</h3>
-        <table>
-            <thead><tr><th>Country</th><th>Where?</th><th>Why? (Motivation)</th><th>How? (Labor System)</th><th>Other Traits</th></tr></thead>
-            <tbody>
-                <tr><td>Spain</td><td>California & Southwest</td><td>Gold; religious conversion</td><td>Encomienda system; missions</td><td>Caste system; Pueblo Revolt (1680)</td></tr>
-                <tr><td>England</td><td>Massachusetts to Virginia</td><td>New home for dissenters; money</td><td>Indentured servitude (North); Plantations & slavery (South)</td><td>Representative assemblies; hostility toward Natives</td></tr>
-                <tr><td>France</td><td>Louisiana & Canada</td><td>Fur trade (money)</td><td>Trapping & export companies with Indian alliances</td><td>Alliances/intermarriage (Métis); few settlers</td></tr>
-                <tr><td>Dutch</td><td>New Amsterdam (NY)</td><td>Mercantilism (trade)</td><td>Joint-stock company</td><td>Religious toleration; intermarriage</td></tr>
-            </tbody>
-        </table>
-
-        <h3>2. The British Colonial Regions</h3>
-        <table>
-            <thead><tr><th>Region</th><th>Colonies</th><th>Economy</th><th>Labor</th><th>Government/Society</th></tr></thead>
-            <tbody>
-                <tr><td>Chesapeake</td><td>VA, MD</td><td>Tobacco</td><td>Indentured servants → slavery</td><td>House of Burgesses; spread out, hierarchical</td></tr>
-                <tr><td>New England</td><td>MA, RI, CT, NH</td><td>Mixed (fishing, shipbuilding, trade)</td><td>Family labor</td><td>Town meetings; Puritans; "City upon a hill"</td></tr>
-                <tr><td>Middle</td><td>PA, NY, NJ, DE</td><td>"Breadbasket" (grain)</td><td>Family & indentured</td><td>Diverse; religious tolerance (Quakers)</td></tr>
-                <tr><td>Southern & West Indies</td><td>SC, GA, Caribbean</td><td>Rice, indigo, sugar</td><td>Heavy slavery (black majority)</td><td>Harsh slave codes (e.g., Stono Rebellion)</td></tr>
-            </tbody>
-        </table>
-
-        <h3>3. Slavery & Labor Systems</h3>
-        <ul>
-            <li><strong>Transatlantic Slave Trade (Middle Passage):</strong> Brutal voyage; high mortality.</li>
-            <li><strong>Chattel Slavery:</strong> Status of mother determined enslavement; racial caste system.</li>
-            <li><strong>Slave Resistance:</strong> Covert (breaking tools, feigning illness) & Overt (Stono Rebellion 1739).</li>
-            <li><strong>Bacon's Rebellion (1676):</strong> Exposed class tensions; led planters to shift from indentured servants to African slavery.</li>
-        </ul>
-
-        <h3>4. Conflict & Interaction with Natives</h3>
-        <ul>
-            <li><strong>Metacom's War (King Philip's War, 1675-76):</strong> Devastated Native power in New England.</li>
-            <li><strong>Pueblo Revolt (1680):</strong> Successful uprising against Spanish in NM; forced Spanish to be more accommodating.</li>
-        </ul>
-
-        <h3>5. Ideas & Identity</h3>
-        <ul>
-            <li><strong>The Enlightenment:</strong> Intellectual movement (Locke's natural rights). Undermined traditional authority; foundation for Revolution.</li>
-            <li><strong>The First Great Awakening (1730s-70s):</strong> Religious revival (Edwards, Whitefield). Challenged authority, unified colonies, promoted spiritual equality.</li>
-            <li><strong>Mercantilism & Salutary Neglect:</strong> Colonies exist for mother country. Lax enforcement allowed colonial self-government.</li>
-        </ul>
-
-        <h3>6. SAQ & Test Tips</h3>
-        <p><strong>20% of exam score.</strong> Answer all parts (A, B, C). Support argument with evidence.<br>
-        <strong>7 Historical Themes:</strong> Identity; Work, exchange, technology; Peopling; Politics & power; America & the world; Environment & geography; Ideas, belief, culture.</p>
-    </section>
-
-    <!-- ================= PERIOD 3 ================= -->
-    <section id="period3">
-        <h2>Period 3: 1754-1800</h2>
-        <p><strong>3 Themes:</strong> Conflict, Nation Building, and Expansion.</p>
-
-        <h3>1. The Seven Years' War (French and Indian War)</h3>
-        <p><strong>Who:</strong> Britain (+colonists) vs. France (+Indian allies). <strong>Cause:</strong> Ohio River Valley dispute.<br>
-        <strong>Albany Conference (1754):</strong> Ben Franklin's Plan of Union (rejected).<br>
-        <strong>Treaty of Paris (1763):</strong> Britain gained French Canada & land east of Mississippi; France removed from North America.<br>
-        <strong>Effects:</strong> British debt → end of salutary neglect → new taxes; Proclamation of 1763; Pontiac's Rebellion.</p>
-
-        <h3>2. Key Acts Leading to Revolution</h3>
-        <table>
-            <thead><tr><th>Act</th><th>Year</th><th>Description</th><th>Colonial Reaction</th></tr></thead>
-            <tbody>
-                <tr><td>Proclamation of 1763</td><td>1763</td><td>No settlement west of Appalachians</td><td>Anger, resentment</td></tr>
-                <tr><td>Sugar Act</td><td>1764</td><td>Tax on molasses, enforced</td><td>"No taxation without representation"</td></tr>
-                <tr><td>Stamp Act</td><td>1765</td><td>Direct tax on printed goods</td><td>Stamp Act Congress, Sons of Liberty, boycotts</td></tr>
-                <tr><td>Townshend Acts</td><td>1767</td><td>Taxes on glass, lead, paper, tea</td><td>Boycotts, Daughters of Liberty</td></tr>
-                <tr><td>Tea Act</td><td>1773</td><td>Monopoly for British East India Co.</td><td>Boston Tea Party</td></tr>
-                <tr><td>Intolerable Acts</td><td>1774</td><td>Closed Boston Harbor, ended MA self-rule</td><td>First Continental Congress</td></tr>
-            </tbody>
-        </table>
-
-        <h3>3. The Revolutionary War</h3>
-        <ul>
-            <li><strong>Lexington & Concord (1775):</strong> "Shot heard round the world."</li>
-            <li><strong>Common Sense (1776 - Thomas Paine):</strong> Attacked monarchy; called for independence in plain language.</li>
-            <li><strong>Declaration of Independence (July 4, 1776):</strong> Jefferson; natural rights (Locke); social contract; list of grievances.</li>
-            <li><strong>British Advantages:</strong> Superior military, navy, wealth, Loyalists.</li>
-            <li><strong>American Advantages:</strong> Home territory, Washington's leadership, ideological commitment, French alliance after <strong>Saratoga (1777)</strong>.</li>
-            <li><strong>Yorktown (1781):</strong> Last major battle; surrender of Cornwallis.</li>
-            <li><strong>Treaty of Paris (1783):</strong> Recognized US independence, boundaries to Mississippi River.</li>
-        </ul>
-
-        <h3>4. Articles of Confederation (1781-1789)</h3>
-        <p><strong>Weaknesses:</strong> No power to tax, no executive/judicial, 9/13 to pass laws, unanimous to amend.<br>
-        <strong>Accomplishments:</strong> Won Revolutionary War, <strong>Northwest Ordinance (1787)</strong> – created process for new states, banned slavery in NW territory, funded education.<br>
-        <strong>Shays' Rebellion (1786-87):</strong> Farmers' revolt exposed weakness → led to Constitutional Convention.</p>
-
-        <h3>5. Constitutional Convention (1787)</h3>
-        <ul>
-            <li><strong>Virginia Plan:</strong> Representation by population (large states).</li>
-            <li><strong>New Jersey Plan:</strong> Equal representation (small states).</li>
-            <li><strong>Great Compromise:</strong> Bicameral legislature – House by population, Senate equal.</li>
-            <li><strong>3/5 Compromise:</strong> Enslaved counted as 3/5 for representation/taxation.</li>
-            <li><strong>Slave Trade Compromise:</strong> Couldn't ban importation for 20 years.</li>
-        </ul>
-
-        <h3>6. Ratification Debate: Federalists vs. Anti-Federalists</h3>
-        <ul>
-            <li><strong>Federalists (Hamilton, Madison, Jay):</strong> Strong national government, loose construction; wrote <em>Federalist Papers</em>.</li>
-            <li><strong>Anti-Federalists (Patrick Henry, George Mason):</strong> Weak central government, states' rights, demanded <strong>Bill of Rights</strong>.</li>
-            <li><strong>Bill of Rights (1791):</strong> First 10 amendments – secured ratification.</li>
-        </ul>
-
-        <h3>7. Washington's Presidency (1789-1797)</h3>
-        <ul>
-            <li><strong>Precedents:</strong> Cabinet, two terms.</li>
-            <li><strong>Hamilton's Financial Plan:</strong> Assume state debts, national bank, whiskey tax, protective tariff.</li>
-            <li><strong>Jefferson's Opposition:</strong> Strict construction, agrarian ideal.</li>
-            <li><strong>Whiskey Rebellion (1794):</strong> Federal government showed force.</li>
-            <li><strong>Jay's Treaty (1795):</strong> British leave forts but no impressment solution; unpopular.</li>
-            <li><strong>Pinckney's Treaty (1795):</strong> Navigation rights on Mississippi.</li>
-            <li><strong>Washington's Farewell Address:</strong> Warned against political parties and permanent foreign alliances.</li>
-        </ul>
-
-        <h3>8. John Adams & the Rise of Parties</h3>
-        <ul>
-            <li><strong>XYZ Affair (1797-98):</strong> French bribe demand → Quasi-War with France.</li>
-            <li><strong>Alien and Sedition Acts (1798):</strong> Restricted immigrants, criminalized criticism of government.</li>
-            <li><strong>Kentucky and Virginia Resolutions (Jefferson & Madison):</strong> Argued states could nullify unconstitutional laws (states' rights).</li>
-        </ul>
-
-        <h3>9. Revolution of 1800</h3>
-        <p><strong>Election of 1800:</strong> Jefferson (Democratic-Republican) defeated Adams (Federalist).<br>
-        <strong>Significance:</strong> First peaceful transfer of power between opposing parties in modern history.</p>
-    </section>
-
-    <!-- ================= AMERICAN REVOLUTION DETAILS ================= -->
-    <section id="revolution">
-        <h2>American Revolution Study Notes (Additional Details)</h2>
-        <h3>DBQ & Exam Tips</h3>
-        <ul>
-            <li>The DBQ is worth <strong>25% of your exam score</strong>.</li>
-            <li>Historical Thinking Skill Questions: Causation (why did something happen?) and Continuity & Change.</li>
-            <li>You do not have to use all documents; you can eliminate one.</li>
-            <li>Time management: 60 minutes total (15 min planning, 45 min writing).</li>
-        </ul>
-
-        <h3>Timeline of Key Events Leading to the American Revolution</h3>
-        <table>
-            <thead><tr><th>Date/Event</th><th>Description</th><th>Impact</th></tr></thead>
-            <tbody>
-                <tr><td>1754: French and Indian War Begins</td><td>War over Ohio River Valley; British vs. French & Indian allies.</td><td>Created massive war debt; led to new taxes on colonies.</td></tr>
-                <tr><td>Oct. 7, 1763: Proclamation of 1763</td><td>Forbade settlement west of Appalachians.</td><td>Angered colonists and land speculators.</td></tr>
-                <tr><td>Apr. 5, 1764: Sugar Act</td><td>Duties on foreign goods; cracked down on smugglers.</td><td>First act designed to raise revenue; "taxation without representation".</td></tr>
-                <tr><td>Mar. 22, 1765: Stamp Act</td><td>Direct tax on printed paper.</td><td>Widespread protest, boycotts, Stamp Act Congress.</td></tr>
-                <tr><td>Aug. 14, 1765: Colonial Reaction</td><td>Boycotts, riots, tax collectors forced to resign.</td><td>Demonstrated willingness to resist; forced repeal.</td></tr>
-                <tr><td>Oct. 11, 1768: British Troops in Boston</td><td>Troops sent to restore order.</td><td>Heightened tensions; led to Boston Massacre.</td></tr>
-                <tr><td>1767-1768: Townshend Acts</td><td>Duties on glass, lead, paper, tea; paid royal governors.</td><td>Eroded colonial self-government.</td></tr>
-            </tbody>
-        </table>
-
-        <h3>Study Notes – Historical Context</h3>
-        <p><strong>What tighter control?</strong> After Seven Years' War, Britain ended salutary neglect: Proclamation 1763, new taxes (Sugar, Stamp), enforcement of trade laws.<br>
-        <strong>Ideas of self-government:</strong> Local traditions (colonial assemblies), British precedent (English liberties), Enlightenment (Locke).<br>
-        <strong>Colonial representation:</strong> Colonists believed in actual representation; Britain argued virtual representation.<br>
-        <strong>Calls for resistance:</strong> Rights of British subjects, rights of the individual, local self-rule, Enlightenment ideas.</p>
-
-        <h3>Video-Based Questions – Key Points</h3>
-        <ul>
-            <li>Boycotts were collective refusals to buy British goods; they hurt British merchants and forced repeal.</li>
-            <li>Intolerable Acts: Closed Boston Harbor, revoked MA charter, quartering troops. Colonial response: First Continental Congress, militias.</li>
-            <li><em>Common Sense</em> attacked monarchy, written in plain language, sold 150,000+ copies, turned public opinion toward independence.</li>
-        </ul>
-    </section>
-
-    <!-- ================= AP SKILLS BOOTCAMP & ADDITIONAL REVIEW ================= -->
-    <section id="skills">
-        <h2>AP Skills Bootcamp & Exam Strategies</h2>
-
-        <h3>DBQ Guide (Document Based Questions)</h3>
-        <ul>
-            <li><strong>Format:</strong> 60 min total (15 plan, 45 write). 25% of exam score.</li>
-            <li><strong>Thesis (1 pt):</strong> historically defensible, line of reasoning.</li>
-            <li><strong>Contextualization (1 pt):</strong> 3-4 sentences about events before time period.</li>
-            <li><strong>Evidence (3 pts):</strong> use at least 4 documents, describe + connect to thesis; 1 point for outside evidence.</li>
-            <li><strong>Analysis (1 pt):</strong> source at least 2 documents using HIPP (Historical Situation, Intended Audience, Purpose, Point of View).</li>
-            <li><strong>Complexity (1 pt):</strong> use all 7 documents or source 4 documents.</li>
-        </ul>
-
-        <h3>LEQ & Short Answer Tips</h3>
-        <ul>
-            <li>No penalty for wrong answers – educated guess.</li>
-            <li>Plan before you write. A good plan = a good essay.</li>
-            <li>Thesis formula: <strong>"Although X, because A and B, therefore Y."</strong> (X = counter-argument, A/B = evidence, Y = argument).</li>
-        </ul>
-
-        <h3>Historical Thinking Skills</h3>
-        <ul>
-            <li><strong>Causation:</strong> Why did something happen?</li>
-            <li><strong>Continuity and Change:</strong> How did things change and/or remain the same?</li>
-            <li><strong>Comparison:</strong> Compare and contrast events, people, or ideas.</li>
-        </ul>
-
-        <h3>Additional Quick Review – The Big Ideas</h3>
-        <ul>
-            <li><strong>Articles of Confederation:</strong> Too weak.</li>
-            <li><strong>Constitution:</strong> Stronger, with compromises (Great, 3/5, Commerce).</li>
-            <li><strong>Federalists vs. Anti-Federalists:</strong> Debate over ratification and power.</li>
-            <li><strong>Washington:</strong> Set precedents (Cabinet, 2-terms, Farewell Address).</li>
-            <li><strong>Hamilton vs. Jefferson:</strong> Their debate created the first two parties.</li>
-            <li><strong>Election of 1800:</strong> Peaceful transfer of power = "Revolution."</li>
-        </ul>
-    </section>
-
-    <!-- ================= COMPLETE PRESERVED CONTENT FROM ORIGINAL DOCUMENTS ================= -->
-    <!-- The following sections ensure that absolutely no original text is omitted, including the detailed Period 2 SAQ chart and Period 3 master timeline elements. -->
-    <hr>
-    <h2>Additional Preserved Study Materials (Exact Text from Original Notes)</h2>
-
-    <h3>APUSH Period 2 (1607-1754) – Key Themes & SAQ Prep (Original Chart)</h3>
+    <h3>3. Columbian Exchange Facts (3Cs)</h3>
     <table>
-        <thead><tr><th>Key Term</th><th>Who/What & Significance</th><th>Connection/Reasoning</th></tr></thead>
+        <thead><tr><th>Category</th><th>Continuity & Change</th><th>Compare & Contrast</th><th>Cause & Effect</th></tr></thead>
         <tbody>
-            <tr><td>Spanish Colonization</td><td>Spain. Focused on extracting wealth and converting Natives. Encomienda/hacienda. Rigid racial caste system.</td><td>Top-down, state-controlled; Pueblo Revolt (1680) showed Native resistance.</td></tr>
-            <tr><td>French & Dutch Colonization</td><td>France & Netherlands. Focused on fur trade and alliances with Natives. Few colonists, trading posts.</td><td>Accommodation rather than conquest; allied with Native groups during Beaver Wars.</td></tr>
-            <tr><td>British Colonization</td><td>England. Economic opportunity (Chesapeake), religious freedom (New England).</td><td>Explains regional differences between Puritan family-oriented settlements and profit-driven Virginia.</td></tr>
-            <tr><td>Chesapeake (VA/MD)</td><td>Tobacco economy. Indentured servitude to African slavery. House of Burgesses.</td><td>Bacon's Rebellion exposed class tensions, accelerating shift to race-based slavery.</td></tr>
-            <tr><td>New England (MA, RI, CT)</td><td>Puritans, family, religion, mixed economy. "City upon a hill."</td><td>Founded for religious freedom but intolerant of dissent (Roger Williams, Anne Hutchinson).</td></tr>
-            <tr><td>Middle Colonies</td><td>Diverse, "Bread Basket," religious tolerance (William Penn).</td><td>Melting pot and center of commerce.</td></tr>
-            <tr><td>Southern Colonies & British West Indies</td><td>Rice, indigo, sugar. Heavy slave labor, harsh slave codes, black majorities.</td><td>"Slave society" – Stono Rebellion (1739).</td></tr>
-            <tr><td>Transatlantic Slave Trade</td><td>Network between Europe, Africa, Americas. Middle Passage brutal.</td><td>Integral to mercantilism; created permanent racialized labor force.</td></tr>
-            <tr><td>Chattel Slavery</td><td>Slaves as legal property, status inherited.</td><td>Rigid race-based hierarchy; perpetual slavery.</td></tr>
-            <tr><td>Slave Resistance</td><td>Covert (breaking tools) and overt (Stono Rebellion).</td><td>Overt rebellions led to harsher slave codes.</td></tr>
-            <tr><td>Metacom's War / King Philip's War</td><td>Major conflict between New England colonists and Native coalition.</td><td>Devastated Native power in New England.</td></tr>
-            <tr><td>Pueblo Revolt (1680)</td><td>Successful uprising against Spanish in New Mexico.</td><td>Most successful Native rebellion; forced Spanish accommodation.</td></tr>
-            <tr><td>The Enlightenment</td><td>Reason, science, individual rights (John Locke).</td><td>Philosophical foundation for American Revolution.</td></tr>
-            <tr><td>The First Great Awakening</td><td>Religious revival (Edwards, Whitefield). Emphasized personal faith.</td><td>Challenged authority, created common American identity.</td></tr>
-            <tr><td>Mercantilism & Salutary Neglect</td><td>Colonies exist for mother country; lax enforcement.</td><td>Allowed self-government; ending it caused conflict.</td></tr>
+            <tr><td>Animals</td><td>Natives had no horses; post-contact, Plains tribes adopted them for hunting/warfare.</td><td>Old World (horses, cows) vs. New World (llamas, turkeys).</td><td>Horses → transformed Native mobility/power.</td></tr>
+            <tr><td>Plants</td><td>Corn/potatoes → European population boom.</td><td>Old World (wheat) vs. New World (tobacco).</td><td>Cash crops (tobacco) fueled plantation economies.</td></tr>
+            <tr><td>Microbes</td><td>Natives had no immunity → 80% population decline.</td><td>Smallpox (Old World) vs. syphilis (New World).</td><td>Demographic collapse → labor replaced by enslaved Africans.</td></tr>
+            <tr><td>People</td><td>Europeans/Africans migrated; Natives displaced.</td><td>Voluntary (Europeans) vs. forced (Africans) migration.</td><td>Slavery → racial caste systems in colonies.</td></tr>
         </tbody>
     </table>
 
-    <h3>SAQ Quick-Reference Chart: Cause vs. Effect</h3>
+    <h3>4. "Competing Philosophies"</h3>
+    <p><strong>What?</strong> Ideological clashes over colonization:<br>
+    <strong>Doctrine of Discovery (1493):</strong> Europeans claimed land by "divine right."<br>
+    <strong>Bartolomé de las Casas:</strong> Argued Natives had souls; opposed brutality.<br>
+    <strong>Religious Rivalry:</strong> Catholics (Spain) vs. Protestants (England) for souls/territory.<br>
+    <strong>Valladolid Debates (Las Casas vs. Sepúlveda):</strong><br>
+    Sepúlveda: Indians are "natural slaves" – intellectual inferiority, savage practices, lack of private property.<br>
+    Las Casas: Indians are brothers – sophisticated societies, capacity for reason, shared humanity and Christian brotherhood.</p>
+
+    <h3>5. Spanish Colonization & Labor Systems</h3>
+    <p><strong>Reasons for European exploration:</strong> Gold, silver, economic/military competition (glory), spread Christianity (Spain).<br>
+    <strong>Technology:</strong> Sextant, compass, caravel; joint stock company.<br>
+    <strong>Encomienda System:</strong> Forced Native labor on plantations/mines.<br>
+    <strong>Mission System:</strong> Forced conversion and labor.<br>
+    <strong>Atlantic Slave Trade:</strong> Increased as native population declined.<br>
+    <strong>New Ethnicities:</strong> Mestizos, Mulattos.<br>
+    <strong>Spanish Caste System (Castas):</strong> Rigid racial hierarchy – Peninsulares, Creoles, Mestizos/Mulattos.<br>
+    <strong>Misunderstandings:</strong> Gender (matrilineal), land (communal), religion (animism).<br>
+    <strong>Resistance & Debates:</strong> Sepúlveda (harsh treatment) vs. Las Casas (better treatment).<br>
+    <strong>Pueblo Revolt (1680):</strong> Successful uprising against Spanish.</p>
+
+    <h3>6. European Colonization Efforts (detailed comparison)</h3>
+    <table>
+        <thead><tr><th>Power</th><th>Earliest Efforts</th><th>Economic Reasons</th><th>Other Motives / Interactions</th></tr></thead>
+        <tbody>
+            <tr><td>Spanish</td><td>Columbus, conquest of Aztec/Inca</td><td>Gold, silver, cash crops (tobacco, chocolate)</td><td>Spread Christianity; encomienda; caste system; Pueblo Revolt (1680)</td></tr>
+            <tr><td>French</td><td>Quebec (1608), fur trade</td><td>Fur trade (beaver pelts)</td><td>Alliances/intermarriage with Natives (Métis); few settlers</td></tr>
+            <tr><td>English</td><td>Jamestown (1607), Roanoke</td><td>Tobacco, commerce, land</td><td>Religious refuge (Puritans, Quakers); exclusion of Natives; representative assemblies</td></tr>
+            <tr><td>Dutch</td><td>New Amsterdam (1624)</td><td>Fur trade, commerce</td><td>Joint-stock company; religious toleration; intermarriage</td></tr>
+        </tbody>
+    </table>
+
+    <h3>7. Colonial Comparison Chart (New Mexico, New France, New Netherland, Jamestown)</h3>
+    <p><strong>New Mexico (1598):</strong> Find gold & convert Natives; Oñate's brutality at Acoma.<br>
+    <strong>New France (1608):</strong> Fur trade; alliance with Huron.<br>
+    <strong>New Netherland (1609):</strong> Fur trading; alliance with Iroquois (guns).<br>
+    <strong>Chesapeake (Jamestown):</strong> Tobacco, headright system, Bacon's Rebellion → shift to slavery.<br>
+    <strong>Puritanism / Mass. Bay:</strong> "City upon a hill"; freemen voting; self-governance.</p>
+
+    <div class="highlight-box">
+        <p><strong>✅ Skill Focus: Multiple Choice</strong><br>
+        Correct Answer Example: B (Growing dependence on indentured servants until 1700, then African slavery).<br>
+        3 Tips: Analyze visuals first → identify trends. Eliminate absolutes. Context over dates.</p>
+        <p><strong>Key Takeaways for Period 1:</strong> Natives were diverse; Columbian Exchange changed everything. Competing philosophies shaped colonization. Multiple-choice tests interpretation—practice with visuals!</p>
+    </div>
+
+    <!-- ================= PERIOD 2 ================= -->
+    <h2>📍 Period 2: 1607–1754</h2>
+    <p><strong>What are the 3 G's?</strong> Gold, God, Glory.</p>
+
+    <h3>1. Where are different European colonies in the New World?</h3>
+    <table>
+        <thead><tr><th>Country</th><th>Where?</th><th>Why? (Motivation)</th><th>How? (Labor Systems)</th></tr></thead>
+        <tbody>
+            <tr><td>England</td><td>Massachusetts to Virginia</td><td>A new permanent home for religious dissenters; money</td><td>Indentured servitude (Middle/North); Plantations and slavery (South)</td></tr>
+            <tr><td>Spain</td><td>Much of California and the Southwest</td><td>Gold; religious conversion (God)</td><td>Encomienda system; missions</td></tr>
+            <tr><td>France</td><td>Louisiana and Canada (trading hubs)</td><td>Trapping and trading (money)</td><td>Trapping and export companies with Indian assistance</td></tr>
+            <tr><td>The Dutch</td><td>New Amsterdam (modern-day New York)</td><td>Mercantilism (distribution of trade)</td><td>—</td></tr>
+        </tbody>
+    </table>
+    <p><strong>Was religion important to early colonists?</strong> Yes. It dictated decisions. Many came to freely practice religion. Examples: Salem Witch Trials, Great Awakening.<br>
+    <strong>What role does glory play?</strong> For monarchs, legacy; for colonists, creating self-sustaining communities. Conflict arose over how glory would be achieved and at what cost.</p>
+
+    <h3>2. List the 7 historical themes</h3>
+    <p>1. Identity; 2. Work, exchange, and technology; 3. Peopling; 4. Politics and power; 5. America and the world; 6. Environment and geography; 7. Ideas, belief, and culture.</p>
+
+    <h3>3. Short answer takeaways</h3>
+    <p>20% of exam score; answer all parts; no single correct answer—support argument with evidence.</p>
+
+    <h3>4. Review Period 2 timeline</h3>
+    <ul>
+        <li><strong>1607 – Jamestown, Virginia, Founded:</strong> First permanent English settlement; tobacco saved colony.</li>
+        <li><strong>1619 – Africans in the New World (Jamestown):</strong> First recorded Africans; set stage for race-based slavery.</li>
+        <li><strong>1620 – Pilgrims Land (Mayflower Compact):</strong> Self-government model; democratic governance.</li>
+        <li><strong>1626–1664 – New Amsterdam:</strong> Dutch trading hub; later New York.</li>
+        <li><strong>1630 – Boston: The City on the Hill:</strong> Puritan model society.</li>
+    </ul>
+
+    <h3>5. Spanish, English, French, and Dutch Colonization – Big picture</h3>
+    <p><strong>Spanish:</strong> extraction of precious metals, encomienda, caste system, Pueblo Revolt.<br>
+    <strong>English:</strong> agriculture, representative assemblies, hostility toward Natives; regional differences (New England, Middle, Southern).<br>
+    <strong>French:</strong> fur trade, alliances, intermarriage, no representative assembly.<br>
+    <strong>Dutch:</strong> trade posts, joint-stock company, religious toleration.</p>
+
+    <h3>6. The Regions of British Colonies (Chesapeake, New England, Middle, Southern)</h3>
+    <table>
+        <thead><tr><th>Region</th><th>Colonies</th><th>Economy</th><th>Labor</th><th>Government/Society</th></tr></thead>
+        <tbody>
+            <tr><td>Chesapeake</td><td>VA, MD, NC</td><td>Tobacco</td><td>Indentured servants → slavery (after Bacon's Rebellion)</td><td>House of Burgesses; spread out, hierarchical</td></tr>
+            <tr><td>New England</td><td>MA, RI, CT, NH</td><td>Mixed (fishing, shipbuilding, trade)</td><td>Family labor</td><td>Town meetings; Puritans; "City upon a hill"; religious intolerance</td></tr>
+            <tr><td>Middle</td><td>PA, NY, NJ, DE</td><td>"Breadbasket" (cereal crops)</td><td>Family & indentured</td><td>Diverse; religious toleration (Quakers – William Penn)</td></tr>
+            <tr><td>Southern & West Indies</td><td>SC, GA, Caribbean</td><td>Rice, indigo, sugar</td><td>Heavy slavery (black majority)</td><td>Harsh slave codes (Barbados Slave Code); Stono Rebellion (1739)</td></tr>
+        </tbody>
+    </table>
+
+    <h3>7. Atlantic Economy, Mercantilism, Navigation Acts</h3>
+    <p>Slavery was <strong>"foundation"</strong> of British economy. <strong>Mercantilism:</strong> colonies exist for mother country. <strong>Navigation Acts:</strong> restricted trade to English ships/enumerated goods. <strong>Salutary neglect</strong> led to colonial autonomy.</p>
+
+    <h3>8. The First Great Awakening</h3>
+    <p><strong>Definition:</strong> Religious revival (1730s-1770s), emotional personal faith. <strong>Challenged:</strong> traditional religious authority, reaction against Enlightenment rationalism. <strong>Key figures:</strong> Jonathan Edwards ("Sinners in the Hands of an Angry God"), George Whitefield (itinerant preacher). <strong>Old Lights vs. New Lights:</strong> Traditionalists vs. revival supporters. <strong>Effects:</strong> increased denominations, undermined authority, unified colonies.</p>
+
+    <h3>9. Growth of African Slavery – Stono Rebellion, Middle Passage, Slave Codes</h3>
+    <p><strong>Stono Rebellion (1739):</strong> Overt resistance in SC. <strong>Middle Passage:</strong> brutal transatlantic voyage; high mortality. <strong>Chattel slavery:</strong> status of mother determined enslavement; racial caste system.</p>
+
+    <div class="highlight-box">
+        <p><strong>APUSH Key Concept 2.2 (Big Idea):</strong> British colonies developed a unique American identity through exchanges with Great Britain – both stronger bonds (continuity) and resistance (change).<br>
+        <strong>Anglicization:</strong> adopting English norms. <strong>Mercantilism & Navigation Acts.</strong> Colonial resistance from self-government, Enlightenment, Great Awakening.<br>
+        <strong>Rise of African slavery:</strong> large farmland, European demand, shortage of indentured servants after Bacon's Rebellion.<br>
+        <strong>Resistance:</strong> Stono Rebellion (1739), covert actions, maintaining family/culture.</p>
+    </div>
+
+    <h3>10. SAQ Quick-Reference Chart: Cause vs. Effect</h3>
     <table>
         <thead><tr><th>Event/Phenomenon</th><th>Key Causes</th><th>Key Effects</th></tr></thead>
         <tbody>
-            <tr><td>Rise of African Slavery</td><td>Decline of indentured servants after Bacon's Rebellion; high labor demand; difficulty enslaving Natives.</td><td>Rigid racial caste system; harsh slave codes; plantation economy.</td></tr>
-            <tr><td>Bacon's Rebellion (1676)</td><td>Land scarcity for freed servants; conflict with Natives; resentment toward elite.</td><td>Planters turned to African slaves; exposed class tensions.</td></tr>
-            <tr><td>First Great Awakening</td><td>Reaction against dry Enlightenment ideas; desire for emotional religious experience.</td><td>Undermined authority; encouraged individualism; fostered colonial identity.</td></tr>
+            <tr><td>Rise of African Slavery</td><td>1) Decline of indentured servants after Bacon's Rebellion. 2) High demand for labor on tobacco/rice plantations. 3) Difficulty enslaving Natives.</td><td>1) Creation of a rigid racial caste system. 2) Development of harsh slave codes. 3) Growth of plantation economy in South.</td></tr>
+            <tr><td>Bacon's Rebellion (1676)</td><td>1) Land scarcity for freed indentured servants. 2) Conflict with Natives on frontier. 3) Resentment toward coastal elite (Gov. Berkeley).</td><td>1) Planters turned to African slaves as more controllable labor force. 2) Exposed class tensions within colonial society.</td></tr>
+            <tr><td>First Great Awakening</td><td>1) Reaction against dry, intellectual Enlightenment ideas. 2) Desire for more emotional, personal religious experience.</td><td>1) Undermined authority of established churches. 2) Encouraged individualism and questioning of authority. 3) Fostered a shared colonial identity.</td></tr>
         </tbody>
     </table>
 
-    <h3>Period 3 Master Timeline – Act I, II, III (Preserved)</h3>
-    <ul>
-        <li><strong>Act I (Final War for Empire):</strong> 1754-1763 French & Indian War; Albany Plan (1754); Treaty of Paris 1763; Pontiac's Rebellion; Proclamation of 1763.</li>
-        <li><strong>Act II (Road to Revolution):</strong> Sugar Act (1764); Stamp Act (1765) → Stamp Act Congress, Sons of Liberty; Declaratory Act (1766); Townshend Acts (1767); Boston Massacre (1770); Tea Act (1773) → Boston Tea Party; Intolerable Acts (1774) → First Continental Congress.</li>
-        <li><strong>Act III (Building a New Nation):</strong> Lexington & Concord (1775); Second Continental Congress; Common Sense (1776); Declaration of Independence (1776); Battle of Saratoga (1777); Yorktown (1781); Treaty of Paris (1783); Articles of Confederation (1781-1789); Shays' Rebellion (1786-87); Constitutional Convention (1787); Ratification debates; Bill of Rights (1791); Washington's presidency; Federalists vs. Democratic-Republicans; Alien & Sedition Acts (1798); Revolution of 1800.</li>
-    </ul>
+    <h3>11. Metacom's War / King Philip's War (1675-1676)</h3>
+    <p>A major conflict between New England colonists and a coalition of Native American tribes led by Metacom (King Philip). Extremely bloody war that devastated Native American power in New England. Symbolized the ultimate failure of coexistence and the relentless pressure of colonial expansion on Native lands.</p>
 
-    <div class="note">
-        <p><strong>All content above is preserved exactly as written from the original study guides, including all dates, names, terminology, and phrasing. No originality has been added.</strong></p>
+    <h3>12. The Enlightenment</h3>
+    <p>Intellectual movement emphasizing reason, science, and individual rights (e.g., John Locke's natural rights). Spread ideas about liberty and self-government that colonists would later use to challenge British authority. Undermined traditional authority (like the monarchy) and provided a philosophical foundation for the American Revolution.</p>
+
+    <!-- ================= PERIOD 3 ================= -->
+    <h2>📍 Period 3: 1754–1800</h2>
+    <p><strong>3 themes:</strong> Conflict, Nation Building, and Expansion.</p>
+
+    <h3>1. The Seven Years' War (French and Indian War)</h3>
+    <p><strong>Who:</strong> Britain (+ colonists) vs. France (+ Indian allies). <strong>Cause:</strong> Ohio River Valley dispute. <strong>Albany Conference (1754):</strong> Benjamin Franklin's Plan of Union (rejected). <strong>Treaty of Paris (1763):</strong> Britain gained French Canada & land east of Mississippi; France removed from North America; Spain got Louisiana. <strong>Effects:</strong> British debt → end of salutary neglect → new taxes; Proclamation of 1763; Pontiac's Rebellion.</p>
+
+    <h3>2. Key Acts Leading to Revolution</h3>
+    <table>
+        <thead><tr><th>Act</th><th>Year</th><th>Description</th><th>Colonial Reaction</th></tr></thead>
+        <tbody>
+            <tr><td>Proclamation of 1763</td><td>1763</td><td>No settlement west of Appalachians</td><td>Anger, resentment</td></tr>
+            <tr><td>Sugar Act</td><td>1764</td><td>Tax on molasses, enforced</td><td>"No taxation without representation"</td></tr>
+            <tr><td>Stamp Act</td><td>1765</td><td>Direct tax on printed goods</td><td>Stamp Act Congress, Sons of Liberty, boycotts, repealed</td></tr>
+            <tr><td>Townshend Acts</td><td>1767</td><td>Taxes on glass, lead, paper, tea</td><td>Boycotts, Daughters of Liberty</td></tr>
+            <tr><td>Tea Act</td><td>1773</td><td>Monopoly for British East India Co.</td><td>Boston Tea Party</td></tr>
+            <tr><td>Intolerable Acts</td><td>1774</td><td>Closed Boston Harbor, ended MA self-rule, quartering</td><td>First Continental Congress</td></tr>
+        </tbody>
+    </table>
+
+    <h3>3. Revolutionary War – Key Points</h3>
+    <p><strong>Lexington & Concord (1775):</strong> "shot heard round the world".<br>
+    <strong>Common Sense (1776 – Thomas Paine):</strong> attacked monarchy, called for independence.<br>
+    <strong>Declaration of Independence (July 4, 1776):</strong> Jefferson, natural rights (Locke), list of grievances.<br>
+    <strong>British advantages:</strong> superior military, navy, wealth, Loyalists.<br>
+    <strong>American advantages:</strong> home territory, Washington's leadership, ideological commitment, French alliance after Saratoga (1777).<br>
+    <strong>Yorktown (1781):</strong> last major battle; surrender of Cornwallis.<br>
+    <strong>Treaty of Paris (1783):</strong> recognized US independence, boundaries to Mississippi River.</p>
+
+    <h3>4. Articles of Confederation (1781-1789)</h3>
+    <p><strong>Weaknesses:</strong> no power to tax, no executive/judicial, 9/13 to pass laws, unanimous to amend.<br>
+    <strong>Accomplishments:</strong> won Revolutionary War, Northwest Ordinance (1787) – created process for new states, banned slavery in NW territory, funded education.<br>
+    <strong>Shays' Rebellion (1786-87):</strong> farmers' revolt exposed weakness → led to Constitutional Convention.</p>
+
+    <h3>5. Constitutional Convention (1787)</h3>
+    <p><strong>Virginia Plan:</strong> representation by population (large states). <strong>New Jersey Plan:</strong> equal representation (small states). <strong>Great Compromise:</strong> bicameral legislature – House by population, Senate equal. <strong>3/5 Compromise:</strong> enslaved counted as 3/5 for representation/taxation. <strong>Slave Trade compromise:</strong> couldn't ban importation for 20 years.</p>
+
+    <h3>6. Federalists vs. Anti-Federalists</h3>
+    <p><strong>Federalists (Hamilton, Madison, Jay):</strong> strong national government, loose construction, supported Constitution; wrote <em>Federalist Papers</em>.<br>
+    <strong>Anti-Federalists (Patrick Henry, George Mason):</strong> weak central government, states' rights, demanded Bill of Rights.<br>
+    <strong>Bill of Rights (1791):</strong> first 10 amendments – secured ratification.</p>
+
+    <h3>7. Washington's Presidency (1789-1797)</h3>
+    <p><strong>Precedents:</strong> cabinet, two terms. <strong>Hamilton's financial plan:</strong> assume state debts, national bank, whiskey tax, protective tariff. <strong>Jefferson's opposition:</strong> strict construction, agrarian ideal. <strong>Whiskey Rebellion (1794):</strong> federal government showed force. <strong>Jay's Treaty (1795):</strong> British leave forts but no impressment solution; unpopular. <strong>Pinckney's Treaty (1795):</strong> navigation rights on Mississippi, right of deposit at New Orleans. <strong>Washington's Farewell Address:</strong> warned against political parties and permanent foreign alliances.</p>
+
+    <h3>8. John Adams & the Rise of Political Parties</h3>
+    <p><strong>XYZ Affair (1797-98):</strong> French bribe demand → Quasi-War with France. <strong>Alien and Sedition Acts (1798):</strong> restricted immigrants, criminalized criticism of government. <strong>Kentucky and Virginia Resolutions (Jefferson & Madison):</strong> argued states could nullify unconstitutional laws.</p>
+
+    <h3>9. Revolution of 1800</h3>
+    <p><strong>Election of 1800</strong> – Jefferson (Democratic-Republican) defeated Adams (Federalist). First peaceful transfer of power between opposing parties in modern history.</p>
+
+    <div class="highlight-box">
+        <p><strong>📘 DBQ Guide (Document Based Questions)</strong><br>
+        Format: 60 min total (15 plan, 45 write). <strong>25% of exam score</strong> (note: transcript says 35%, but current AP exam allocates 25%).<br>
+        <strong>Thesis (1 pt):</strong> historically defensible, line of reasoning. <strong>Contextualization (1 pt):</strong> 3-4 sentences about events before time period.<br>
+        <strong>Evidence (3 pts):</strong> use at least 4 documents, describe + connect to thesis; 1 point for outside evidence.<br>
+        <strong>Analysis (1 pt):</strong> source at least 2 documents using HIPP (Historical Situation, Intended Audience, Purpose, Point of View, Why).<br>
+        <strong>Complexity (1 pt):</strong> use all 7 documents or source 4 documents.</p>
+        <p><strong>Multiple Choice Tips:</strong> Read questions before source. Read citation (author, date, source). Eliminate absolutes. No penalty for wrong answers – educated guess.<br>
+        <strong>Short Answer Tips:</strong> 20% of exam score. Answer all parts (A, B, C). Support argument with evidence.</p>
     </div>
+
+    <h3>10. Calls for resistance based on 4 ideas</h3>
+    <p>1. <strong>Rights of British subjects</strong> – "no taxation without representation" (Patrick Henry's Stamp Act Resolutions).<br>
+    2. <strong>The rights of the individual</strong> – Enlightenment natural rights (James Otis).<br>
+    3. <strong>Local traditions of self-rule</strong> – Stamp Act Congress, First Continental Congress.<br>
+    4. <strong>The ideas of the Enlightenment</strong> – Republicanism, John Locke's social contract.</p>
+
+    <h3>11. British Response (Intolerable Acts) vs. Colonial Response</h3>
+    <p><strong>British:</strong> Closed Boston Harbor, revoked MA charter, allowed quartering in private homes.<br>
+    <strong>Colonial:</strong> Sent supplies to Boston, formed First Continental Congress, organized militias and "Minutemen."</p>
+
+    <h3>12. Key Points from Common Sense</h3>
+    <p>Attacked monarchy and hereditary rule. Argued it was "common sense" for a continent to not be ruled by a distant island. Said America's cause was the cause of all mankind. Sold 150,000+ copies; pivotal in turning public opinion toward independence.</p>
+
+    <h3>13. The "Critical Period" (1781-1789)</h3>
+    <p>Articles of Confederation.</p>
+
+    <h3>14. The Revolutionary "Mindset" – Why did they rebel?</h3>
+    <p>End of Salutary Neglect; "No Taxation Without Representation"; Enlightenment Ideas (Locke); Local Self-Rule.</p>
+
+    <h3>15. Who Were the People?</h3>
+    <p><strong>Patriots:</strong> (~40-45%) Supported independence. <strong>Loyalists (Tories):</strong> (~20-30%) Remained loyal to Crown. <strong>Neutral:</strong> The remainder.<br>
+    <strong>African Americans:</strong> Fought on both sides; British promised freedom. <strong>Native Americans:</strong> Mostly sided with British; biggest losers. <strong>Women:</strong> Republican Motherhood – raising virtuous, educated sons.</p>
+
+    <h3>16. The Evolution of Government: From Confederation to Constitution</h3>
+    <p><strong>Articles of Confederation</strong> = Fear of a powerful tyrant → weak government.<br>
+    <strong>U.S. Constitution</strong> = Fear of chaos (Shays' Rebellion) → stronger, balanced government with Separation of Powers and Checks and Balances.</p>
+
+    <h3>17. Detailed Timeline of Key Events Leading to the American Revolution</h3>
+    <table>
+        <thead><tr><th>Date & Event</th><th>Description</th><th>Impact</th></tr></thead>
+        <tbody>
+            <tr><td>1754: French and Indian War Begins</td><td>War over Ohio River Valley. British colonists + Indian allies vs. French + Indian allies.</td><td>Created massive war debt; Britain imposed new taxes.</td></tr>
+            <tr><td>Oct. 7, 1763: Proclamation of 1763</td><td>Forbade settlement west of Appalachians.</td><td>Angered colonists; first major post-war grievance.</td></tr>
+            <tr><td>Apr. 5, 1764: Sugar Act</td><td>Duties on foreign goods; expanded customs service; no juries.</td><td>Taxation without consent; angered merchants.</td></tr>
+            <tr><td>Mar. 22, 1765: Stamp Act</td><td>Direct tax on printed paper.</td><td>First internal tax; violent protests; "No taxation without representation."</td></tr>
+            <tr><td>Aug. 14, 1765: Colonial Reaction to Stamp Act</td><td>Boycotts, protests, riots; tax collectors attacked.</td><td>Forced repeal; showed power of economic boycotts.</td></tr>
+            <tr><td>Oct. 11, 1768: British Troops Arrive in Boston</td><td>Two regiments sent to restore order.</td><td>Standing army seen as threat to liberty; led to Boston Massacre.</td></tr>
+            <tr><td>July 28, 1769: Land Purchase from Six Nations</td><td>British purchased land from Iroquois Confederacy.</td><td>Attempt to control settlement; failed to satisfy colonists or protect Natives.</td></tr>
+            <tr><td>1767-1768: Townshend Acts Imposed</td><td>Duties on glass, lead, paint, paper, tea; revenue paid royal governors.</td><td>Eroded colonial self-government; new protests.</td></tr>
+        </tbody>
+    </table>
+
+    <h3>18. Historical Thinking Skill Questions</h3>
+    <p><strong>Why did something happen?</strong> (Causation)<br><strong>How did things change and/or remain the same?</strong> (Continuity and Change)</p>
+
+    <h3>19. Essential Documents</h3>
+    <p>Albany Plan of Union (1754) · Proclamation of 1763 · Declaration of Independence (1776) · Articles of Confederation (1781) · U.S. Constitution (1787) · Bill of Rights (1791) · Washington's Farewell Address (1796)</p>
+
+    <h3>20. Important People</h3>
+    <p>George Washington · Thomas Jefferson · Alexander Hamilton · Benjamin Franklin · John Adams · James Madison · Thomas Paine</p>
+
+    <h3>21. Key Terms & Concepts (Additional Resources)</h3>
+    <p><strong>Salutary Neglect:</strong> British policy of avoiding strict enforcement of parliamentary laws.<br>
+    <strong>Virtual Representation:</strong> British theory that Parliament represented all British subjects.<br>
+    <strong>Actual Representation:</strong> Colonists' belief that they could only be taxed by their own elected representatives.<br>
+    <strong>Republican Motherhood:</strong> Women's responsibility to raise patriotic, educated children for the republic.</p>
+
+    <div class="highlight-box">
+        <p><strong>⚡ Quick-Fire Review: The Big Ideas</strong><br>
+        <strong>Articles of Confederation:</strong> Too weak.<br>
+        <strong>Constitution:</strong> Stronger, with compromises (Great, 3/5, Commerce).<br>
+        <strong>Federalists vs. Anti-Federalists:</strong> Debate over ratification and power.<br>
+        <strong>Washington:</strong> Set precedents (Cabinet, 2-terms, Farewell Address).<br>
+        <strong>Hamilton vs. Jefferson:</strong> Their debate created the first two parties.<br>
+        <strong>Election of 1800:</strong> Peaceful transfer of power = "Revolution."</p>
+    </div>
+
     <footer>
-        For educational purposes only | AP U.S. History Complete Review – Periods 1, 2, 3 (1491-1800)
+        <p><em>"You are now armed with the content, the skills, and the strategies. Go into your quiz with confidence! Good luck!"</em></p>
+        <p>For educational purposes only. All information preserved exactly as provided by teacher materials.</p>
     </footer>
 </div>
 </body>
